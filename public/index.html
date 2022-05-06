@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoWeb</title>
+</head>
+
+<body>
+    <h1>InfoWeb</h1>
+    <h2>Ingreso de Productos</h2>
+    <form action="/api/productos" method="post" enctype="multipart/form-data">
+        <label>Producto: </label>
+        <input type="text" name="title">
+        <br><br>
+        <label>Precio: </label>
+        <input type="number" name="price">
+        <br><br>
+        <label>Imagen :</label>
+        <input type="file" accept="image/*" name="thumbnail" required>
+        <br><br>
+        <button>Guardar Producto</button>
+    </form>
+</body>
+
+</html>
