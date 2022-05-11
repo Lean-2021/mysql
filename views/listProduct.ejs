@@ -1,0 +1,48 @@
+<%- include('./partials/header')%>
+
+    <div class="container mt-5"> <!--botón agregar productos-->
+        <a href="/" class="btn btn-success mb-4">Agregar Productos</a>
+    </div>
+    <div class="container text-center"> <!--titulo lista de productos-->
+        <h2 class="form-title">Lista de productos</h2>
+    </div>
+    <!--tabla para mostrar datos-->
+    <div class="container text-center">
+        <div class="row mt-5">
+            <div class="col-md-8 offset-md-2">
+                <% if(listProducts.length!==0) {%>
+                    <!--si existen productos mostrar el resultado en la tabla-->
+                    <table class="table table-container">
+                        <thead class="table-head">
+                            <tr>
+                                <th>Producto</th>
+                                <th>Precio</th>
+                                <th>Imágen</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% listProducts.forEach(product=>{%>
+                                <tr>
+                                    <td class="table-description">
+                                        <%= product.title %>
+                                    </td>
+                                    <td class="table-description">
+                                        <%= '$ ' +product.price %>
+                                    </td>
+                                    <td 
+                                        class="table-description"><img src="<%= '../public/image/'+product.thumbnail%>"
+                                        alt="imagen producto"class="table-image" width="60"height="50"></td>
+                                </tr>
+                            <%})%>
+                        </tbody>
+                    </table>
+                <%}
+                else{%>
+                    <!--si no existen datos mostrar mensaje -->
+                    <div class="container mt-4">
+                        <h4>No hay productos en la lista</h3>
+                    </div>
+                <%}%>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,12 @@
+<h2 class="form-title">Ingreso de Productos</h2>
+
+<form action="/productos" method="post" enctype="multipart/form-data" class="form-style">
+    <label for="title" class="form-label">Producto</label>
+    <input type="text" name="title" id="title" class="form-control" placeholder="Nombre del producto" required
+        autocomplete="off">
+    <label for="price" class="form-label mt-2">Precio</label>
+    <input type="number" name="price" id="price" class="form-control" placeholder="Precio del producto" required>
+    <label class="form-label mt-2">Imagen</label>
+    <input type="file" accept="image/*" name="thumbnail" required class="form-control">
+    <button class="mt-4 btn btn-success mb-3">Guardar Producto</button>
+</form>

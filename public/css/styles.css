@@ -1,0 +1,57 @@
+body {
+    background: #D3CCE3;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.form-title {
+    /*titulo del formulario de ingreso de productos*/
+    color: blue;
+    text-shadow: 1px 1px 1px black;
+}
+
+.form-style {
+    /*estilo del formulario de ingreso */
+    background-color: rgb(178, 205, 245);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px;
+    box-shadow: 1px 1px 3px 1px grey;
+    font-weight: bold;
+}
+
+.form-style input {
+    /*estilo inputs de ingreso*/
+    width: 70%;
+    margin: auto;
+    background-color: cornsilk;
+    text-align: center;
+    box-shadow: 1px 1px 2px 1px black;
+}
+
+.form-style label {
+    /*estilos etiquetas formulario*/
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/*estilo de las tablas con contenido del producto*/
+.table-container {
+    border: 2px solid black;
+    background-color: rgb(243, 228, 203);
+}
+
+.table-head {
+    background-color: rgb(142, 239, 239);
+}
+
+.table-description {
+    vertical-align: middle;
+}
+.table-image{
+    object-fit:fill;
+}
