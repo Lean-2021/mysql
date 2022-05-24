@@ -55,3 +55,38 @@ body {
 .table-image{
     object-fit:fill;
 }
+/* estilos del chat de mensajes */
+
+.chat-container{
+    background-color: rgb(178, 205, 245);
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 1px grey;
+    padding: 20px;
+}
+.chat-container label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#showMessage{   /* seccion de mensajes */
+    height:300px;
+    background-color: #E9E4F0;
+    overflow: auto;
+}
+/* estilos texto email */
+.message-email{
+    color:blue;
+}
+/* estilos fecha y hora mensajes */
+.message-dateTime{
+    color:brown;
+}
+/* estilos mensajes */
+.message{
+    color:green;
+}
+/* error email */
+.error-email,.error-message{
+    color:red;
+    font-weight: bold;
+}

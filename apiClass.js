@@ -19,7 +19,7 @@ class Products {
         else {
             id = listProducts[listProducts.length - 1].id + 1;
         }
-        listProducts.push({ id: id, ...newProduct })
+        listProducts.push({ id: id, ...newProduct });
     };
 
     findById(id) {
