@@ -1,4 +1,3 @@
-
 const socket = io();
 const btnEnviar = document.getElementById('btnEnviar');
 const show = document.getElementById('showResult');
@@ -44,7 +43,7 @@ const showProducts=(data)=>{
             <td class="table-description">
             ${product.price}
             </td>
-            <td class="table-description"><img src='./public/image/${product.thumbnail}'
+            <td class="table-description"><img src="${product.thumbnail}"
             alt="imagen producto"class="table-image" width="60"height="50">
             </td>
           </tr>     
@@ -55,11 +54,11 @@ const showProducts=(data)=>{
 };
 
 socket.on('resultData',(data)=>{   // Escuchar evento cuando se agrega un nuevo producto
-  fetch('http://localhost:8080/') //obtener datos del servidor GET
-    .then((response)=>showProducts(data))
-    .catch((error)=>console.log('Error de conexión',error))
+   fetch('http://localhost:8080/')
+    .then ((response)=>showProducts(data))
+    .catch(()=>console.log('error al obtener datos'))
 });
-
+  
 // centro de mensajes
 
 btnEnviar.addEventListener('click',()=>{
