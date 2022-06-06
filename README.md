@@ -15,6 +15,7 @@
 
 - Ejecutar npm start para levantar el servidor en el puerto local http://localhost:8080
   y crear las tablas productos en mysql, mensajes en sqlite3. Previamente tener instaladas estas bases de datos.
+  Para conectar a la base de datos **ecommerce** mysql mariaDB el usuario es **root** y el password: **Admin1234**
 
 ### 3. Carga de Productos
 
